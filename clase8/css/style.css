@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+@font-face {
+    font-family: miTipografia;
+    src: url(../fonts/High\ Spirited.ttf);
+}
+
+header{
+    text-align: center;
+    background-color: #E6E6E6;
+}
+
+h1{
+    background-color: #C4C4C4;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 22px;
+    text-align: center;
+    font-family: miTipografia, sans-serif;
+}
+
+section ul li{
+    list-style-type: none;
+}
+
+section ul li span{
+    font-weight: bold;
+}
+
+/* span{
+    background-color: blue;
+} */
+
