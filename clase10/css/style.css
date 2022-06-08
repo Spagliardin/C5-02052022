@@ -1,0 +1,58 @@
+*{
+  box-sizing: border-box;
+  margin: 0;  
+}
+
+header{
+    background-color: yellow;
+    text-align: center;
+    padding: 25px 0;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+header nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+h2{
+    margin: 50px 0;
+}
+
+p{
+    margin: 50px 0;
+}
+
+
+div{
+    width: 500px;
+    /* height: 200px; */
+    background-color: pink;
+    margin: 25px 0 45px 5px;
+    padding: 25px;
+    border: 10px red solid;
+    position: relative;
+    /* position: relative;
+    left: 500px;
+    top: 250px; */
+    /* position: fixed; */
+    /* top: 10px; */
+    /* overflow: hidden; */
+}
+
+img{
+    width: 50px;
+    position: absolute;
+    top: 125px;
+    left: 210px;
+}
+
+/* img{
+    position: fixed;
+    width: 75px;
+    right: 10px;
+    bottom: 10px;
+} */
