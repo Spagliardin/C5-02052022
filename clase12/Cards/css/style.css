@@ -1,6 +1,97 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
 body {
   font-family: "Roboto", sans-serif;
 }
 
+header p{
+  background-color: #1CD1B0;
+  padding: 10px 28px;
+}
+
+main h1{
+  width: 100%;
+  background-color: #00669F;
+  padding: 28px;
+  position: sticky;
+  top: 0;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section{
+  width: 995px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+article{
+  margin: 150px 0;
+  width: 300px;
+  position: relative;
+  text-align: center;
+  background: #F3F3F3;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.75);
+}
+
+article div{
+  padding: 20px;
+  height: 193px;
+  background-image: url(../img/bg-Batman.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: left;
+  border-radius: 16px 16px 0 0;
+}
+
+article div.hearley{
+  background-image: url(../img/bg-hearley.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+article div i{
+  font-size: 25px;
+  color: red;
+}
+
+article img{
+  width: 125px;
+  border-radius: 50%;
+  position: absolute;
+  left: 90px;
+  top: 125px;
+  /* position: relative;
+  bottom: 62.5px; */
+}
+
+article h4{
+  margin-top: 75px;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+article p{
+  text-align: left;
+  padding: 20px;
+}
+
+article button{
+  margin: 37px 0px 18px 0;
+  color: white;
+  background-color: #00669F;
+  padding: 15px 37px;
+  border: none;
+}
