@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a:active{
+    color: orange;
+}
+
+a:visited{
+    color: yellowgreen
+}
+
+nav{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li{
+    margin-left: 10px;
+}
+
+nav ul li:nth-child(3n):hover{
+    background-color: green;
+}
+
+section article:nth-of-type(2){
+    background-color: pink;
+}
+
+button{
+    margin-left: 50px;
+    background-color: rgb(43, 43, 187);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(89, 89, 126);
+    font-weight: bold;
+    font-size: 20px;
+    width: 500px;
+}
+
+input[type=number]{
+    width: 500px;
+}
+
+input[type=number]:focus{
+    border: 2px solid red;
+    outline: 10px solid red;
+}
+
+input[type=email]:invalid{
+    border: 2px solid red;
+    outline: 10px solid red;
+}
+
+ul li{
+    position: relative;
+    list-style-type: none;
+}
+
+ul li::before{
+   content: '';
+   background-color: brown;
+   width: 15px;
+   height: 1px;
+   display: inline-block;
+   position: absolute;
+   top: 18px;
+   /* margin-right: 10px; */
+}
+
+ul li::after{
+   content: '\f13d'; 
+   font-family: 'Font Awesome 5 Free';
+   font-weight: 700;
+}
+
+
+
+/* 
+n = n
+
+
+
+
+*/
+
