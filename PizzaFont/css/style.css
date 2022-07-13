@@ -19,6 +19,15 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color: blue;
+}
+
+svg{
+    /* display: none; */
+    width: 500px;
+}
+
 header, footer{
     background: #222222;
     padding: 10px 20px 10px 75px;
@@ -109,4 +118,16 @@ footer nav ul {
 
 footer nav ul li{
     margin: 5px;
+}
+
+@media (max-width: 400px) {
+
+    nav ul{
+        display: none;
+    }
+
+
+    svg{
+        display: block;
+    }
 }

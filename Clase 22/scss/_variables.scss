@@ -1,0 +1,33 @@
+
+
+$bg-primary: blue;
+$w: 50%;
+
+$columns: 12;
+
+
+$prefix: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
+
+
+
+@mixin generateButtons($bgColor, $fw, $color, $success: undefined) {
+
+    @if $success == success {
+        background-color: blue;
+    }
+
+    margin: 25px;
+    padding: 15px 35px;
+    
+    font-weight: $fw;
+    color: $color;
+    border-radius: 18px;
+    cursor: pointer;
+    border: none;
+}

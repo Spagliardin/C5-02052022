@@ -1,0 +1,95 @@
+
+@import 'variables.scss';
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+// body{
+//     background-color: pink;
+// }
+
+
+// main{
+//     width: 75%;
+//     background-color: $bg-primary;
+//     section.hero{
+//         width: $w;
+//         background-color: $bg-primary;
+//         div.text-combo{
+//             width: $w;
+//             background-color: $bg-primary;
+//             h2{
+//                 font-size: 25px;
+//             }
+//             p{
+//                 font-size: 12px;
+//                 &:nth-child(2){
+//                     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+//                 }
+//                 // &.textoUno{
+//                 //     font-family: Arial, Helvetica, sans-serif;
+//                 // }
+//                 // &.textoDos{
+//                 //     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+//                 // }
+//             }
+//             button{
+//                 border: none;
+//                 background-color: blue;
+//                 padding: 25px 40px;
+//             }
+//         }
+//     }
+// }
+
+// .success{
+//     @include generateButtons(rgb(95, 95, 182), 200, white, success);
+// }
+
+// .warning{
+//     @include generateButtons(yellow, 500, black);
+// }
+
+// .danger{
+//     @include generateButtons(red, 900, white);
+// }
+
+main{
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    div{
+        border: 1px solid black;
+    }
+}
+
+
+
+@mixin generateColumns($prefix: undefined) {
+    @if ($prefix != undefined) {
+        @for $i from 1 to 13 {
+            .col-#{$prefix}-#{$i}{
+                width: percentage($i/12);
+            }
+        }
+    } @else {
+        @for $i from 1 to 13 {
+            .col-#{$i}{
+                width: percentage($i/12);
+            }
+        }
+    } 
+}
+
+@include generateColumns();
+
+
+@each $name, $value in $prefix {
+    @media (min-width: $value) {
+        @include generateColumns($name)
+    }
+}
